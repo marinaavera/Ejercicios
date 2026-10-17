@@ -27,9 +27,13 @@ public class Recursividad {
 		return arr[i] + sumaArray(arr, i+1);
 	}
 	
-	public static void main (String[] args) {
-		//cuentaAtras(5);
-		//System.out.println(suma(5));
+	public double aritmeticaRe(int n, double d, double a0) throws Exception{
+		if(n<0)
+			throw new Exception("No valen números negativos.");
+		if (n == 0)
+			return a0;
+		else
+			return d*n+a0+aritmeticaRe(n-1,d,a0);
 	}
-
+	
 }
