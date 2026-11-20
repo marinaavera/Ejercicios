@@ -1,11 +1,11 @@
 package concurrencia;
 
 public class Reloj {
-	public static void main(Tring[] args) {
+	public static void main(String[] args) {
 		Hora hora = new Hora ();
 		Sonido sonido = new Sonido();
 		Hola hola = new Hola();
-		hola.start();
+		hora.start();
 		sonido.start();
 		hola.start();
 	}
